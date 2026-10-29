@@ -138,19 +138,20 @@ function HomePage({ basePath }: { basePath: string }) {
           </div>
 
           <div className="grid gap-4 lg:grid-cols-[1fr_220px]">
+            {/* Imaginea actualizată cu electricianul testând panoul electric cu multimetrul (din linkul specificat) */}
             <div className="relative min-h-[560px] overflow-hidden rounded-[2.5rem] bg-[#101820] shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
               <Image
                 src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80"
-                alt="Electrician care lucrează la o instalație electrică rezidențială"
+                alt="Electrician testând panoul electric cu un multimetru"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/88 via-[#101820]/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-8">
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">Concept multi-pagină pentru electricieni</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">Siguranță și precizie tehnică</div>
                 <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight md:text-4xl">
-                  Ierarhie clară pentru defecțiuni, iluminat, tablouri, verificări și cereri rapide de preț.
+                  Diagnostice exacte și verificări riguroase pentru orice tip de instalație electrică.
                 </h2>
               </div>
             </div>
@@ -305,7 +306,7 @@ function QuotePage({ basePath }: { basePath: string }) {
         </div>
         <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-6">
           <div className="grid gap-4 sm:grid-cols-2">
-            {["Nume complet", "Număr de telefon", "Adresă / Zonă", "Ora preferată", "Ce1 lucrări electrice sunt necesare?"].map((field, index) => (
+            {["Nume complet", "Număr de telefon", "Adresă / Zonă", "Ora preferată", "Ce lucrări electrice sunt necesare?"].map((field, index) => (
               <div key={field} className={`rounded-xl border border-[#101820]/10 px-4 py-3 text-sm text-gray-500 ${index === 4 ? "sm:col-span-2" : ""}`}>
                 {field}
               </div>
