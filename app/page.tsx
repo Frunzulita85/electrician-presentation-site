@@ -2,9 +2,9 @@ import type { Metadata } from "next"
 import ElectricianSite from "../components/electrician-site"
 
 export const metadata: Metadata = {
-  title: "Northwire Electric | Electrician Services Edinburgh",
+  title: "VoltGuard Electric | Servicii Electrice & Depanare Rapidă Brașov",
   description:
-    "Local electrician website template homepage built for urgent enquiries, homeowner trust, and service-page SEO expansion.",
+    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
 }
 
 export default function HomePage() {
