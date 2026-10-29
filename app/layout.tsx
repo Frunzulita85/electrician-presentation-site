@@ -4,21 +4,29 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Northwire Electric | Electrical Services",
+  title: "VoltGuard Electric | Servicii Electrice & Depanare Rapidă Brașov",
   description:
-    "A comprehensive electrician website template built for urgent faults, homeowner trust, and stronger service-page SEO structure.",
-  keywords: ["electrician website template", "local electrician website", "emergency electrician template", "electrical services website", "electrician lead generation site"],
+    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
+  keywords: [
+    "electrician Brasov",
+    "interventii electrice urgenta",
+    "reparatii instalatii electrice",
+    "schimbare tablou electric",
+    "servicii electrician autorizat",
+    "depanare electrica"
+  ],
   openGraph: {
-    title: "Northwire Electric | Electrical Services",
+    title: "VoltGuard Electric | Servicii Electrice & Depanare Rapidă Brașov",
     description:
-      "A comprehensive electrician website template built for urgent faults, homeowner trust, and stronger service-page SEO structure.",
+      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
     type: "website",
+    locale: "ro_RO",
   },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="ro">
       <body>{children}</body>
     </html>
   )

@@ -6,56 +6,56 @@ type ElectricianPage = "home" | "services" | "quote"
 
 const services = [
   {
-    title: "Emergency Fault Finding",
-    copy: "Power loss, tripping circuits, burning smells, and the electrical jobs where the next step needs to feel obvious immediately.",
+    title: "Intervenții Rapide & Depanare",
+    copy: "Pierderi de curent, circuite care sar, mirosuri de ars și probleme electrice urgente care necesită o rezolvare imediată și sigură.",
   },
   {
-    title: "Consumer Units & Upgrades",
-    copy: "Board changes, safety improvements, and upgrade work for homes that need cleaner capacity and compliance.",
+    title: "Tablouri Electrice & Siguranțe",
+    copy: "Înlocuiri de tablouri, modernizări și îmbunătățiri de siguranță pentru locuințe care au nevoie de o capacitate corectă și conformitate.",
   },
   {
-    title: "Lighting & Power",
-    copy: "Sockets, switches, feature lighting, garden lighting, and the visible electrical work homeowners compare carefully.",
+    title: "Iluminat & Prize",
+    copy: "Montaj prize, întrerupătoare, corpuri de iluminat, iluminat ornamental pentru grădină și lucrări electrice vizibile executate cu atenție.",
   },
   {
-    title: "EICRs & Landlord Safety",
-    copy: "Certificates, inspections, remedials, and repeat electrical support for landlords and managed properties.",
+    title: "Verificări PRAM & Certificări",
+    copy: "Măsurători, inspecții, buletine PRAM și suport tehnic periodic pentru spații comerciale, birouri și imobile închiriate.",
   },
   {
-    title: "Rewires & Renovations",
-    copy: "Partial rewires, extension work, kitchen projects, and electrical planning around broader home improvements.",
+    title: "Renovări & Cablări Complete",
+    copy: "Reablări parțiale sau totale, lucrări pentru extinderi, proiecte de bucătării și planificare electrică pentru renovări ample.",
   },
   {
-    title: "Maintenance Support",
-    copy: "Smaller fixes, scheduled checks, and longer-term support work that turns one-off jobs into repeat relationships.",
+    title: "Mentenanță Preventivă",
+    copy: "Reparații minore, verificări programate și suport pe termen lung pentru a transforma lucrările punctuale în parteneriate de durată.",
   },
 ]
 
 const processSteps = [
   {
-    title: "Explain the issue clearly",
-    copy: "The homepage and quote path are built for both urgent fault-finding and more planned domestic electrical work.",
+    title: "Clarificarea problemei",
+    copy: "Pagina principală și fluxul de cereri sunt concepute atât pentru depanări urgente, cât și pentru lucrări electrice planificate în locuințe.",
   },
   {
-    title: "Route the enquiry properly",
-    copy: "The structure supports same-day jobs, homeowner quote requests, and landlord or certificate-led enquiries without one generic path for all of them.",
+    title: "Dirijarea corectă a cererii",
+    copy: "Structura acceptă solicitări pentru intervenții în aceeași zi, cereri de oferte de la proprietari și proiecte complexe fără a folosi un formular generic.",
   },
   {
-    title: "Grow into stronger local coverage",
-    copy: "The site is built for services, areas, FAQs, and trust content so it can become a proper local SEO asset over time.",
+    title: "Dezvoltare SEO locală puternică",
+    copy: "Site-ul este construit pentru servicii, zone de acoperire, secțiuni de întrebări frecvente și conținut de încredere pentru a crește organic în căutări.",
   },
 ]
 
-const serviceAreas = ["Stockbridge", "Morningside", "Leith", "Trinity", "Portobello", "Corstorphine", "Newington", "Musselburgh"]
+const serviceAreas = ["Centru", "Schei", "Tractorul", "Racadau", "Noua", "Stupini", "Florilor", "Ghimbav"]
 
 const reviews = [
   {
-    name: "Hannah C.",
-    quote: "This feels like a proper electrician website structure instead of a generic trade theme with the colours changed.",
+    name: "Alexandru M.",
+    quote: "În sfârșit, un site de profil care arată a platformă serioasă de electrician, nu o temă generică cu culori schimbate.",
   },
   {
-    name: "Marcus T.",
-    quote: "Good balance between urgent fault-finding, homeowner trust, and room to expand into certificates and service pages.",
+    name: "Ioana P.",
+    quote: "Un echilibru excelent între urgențe, încrederea oferită clientului și claritatea paginilor de servicii.",
   },
 ]
 
@@ -66,9 +66,9 @@ function getHref(basePath: string, page: ElectricianPage) {
 
 function PreviewNav({ currentPage, basePath }: { currentPage: ElectricianPage; basePath: string }) {
   const items = [
-    { label: "Home", href: getHref(basePath, "home"), page: "home" as const },
-    { label: "Services", href: getHref(basePath, "services"), page: "services" as const },
-    { label: "Quote", href: getHref(basePath, "quote"), page: "quote" as const },
+    { label: "Acasă", href: getHref(basePath, "home"), page: "home" as const },
+    { label: "Servicii", href: getHref(basePath, "services"), page: "services" as const },
+    { label: "Ofertă", href: getHref(basePath, "quote"), page: "quote" as const },
   ]
 
   return (
@@ -87,15 +87,15 @@ function SiteHeader({ currentPage, basePath }: { currentPage: ElectricianPage; b
     <header className="sticky top-0 z-20 border-b border-[#101820]/10 bg-[#f6f8f7]/92 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <div>
-          <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">Northwire Electric</div>
-          <div className="mt-1 text-sm text-[#59636b]">Domestic electrical work, fault finding, and local safety upgrades</div>
+          <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">VoltGuard Electric</div>
+          <div className="mt-1 text-sm text-[#59636b]">Instalații electrice rezidențiale, depanare rapidă și modernizări de siguranță</div>
         </div>
 
         <PreviewNav currentPage={currentPage} basePath={basePath} />
 
-        <a href="tel:+441313330880" className="inline-flex items-center rounded-full bg-[#101820] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#1d2a36]">
+        <a href="tel:+40721000000" className="inline-flex items-center rounded-full bg-[#101820] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#1d2a36]">
           <PhoneCall className="mr-2 h-4 w-4" />
-          0131 333 0880
+          0721 000 000
         </a>
       </div>
     </header>
@@ -110,26 +110,26 @@ function HomePage({ basePath }: { basePath: string }) {
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <div className="inline-flex items-center rounded-full border border-[#cf9f2e]/20 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">
-              Electrician lead-generation template
+              Servicii electrice autorizate
             </div>
             <h1 className="mt-6 max-w-2xl text-5xl font-semibold leading-[0.95] tracking-tight text-[#101820] md:text-6xl">
-              A sharper electrician website for urgent faults, upgrade work, and stronger local SEO.
+              Un site modern pentru electricieni pregătiți de urgențe, modernizări și SEO local puternic.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#59636b]">
-              Built for electricians who need more than a generic trade homepage. This template balances emergency intent, homeowner trust, and cleaner service-page depth for long-term growth.
+              Construit pentru profesioniștii care au nevoie de mai mult decât o pagină de prezentare simplă. Acest șablon îmbină claritatea intervențiilor de urgență, încrederea clienților și profunzimea paginilor de servicii.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={getHref(basePath, "quote")} className="inline-flex items-center rounded-full bg-[#cf9f2e] px-5 py-3 text-sm font-semibold text-[#101820] transition hover:bg-[#b88d29]">
-                Request Electrical Quote
+                Solicită o Ofertă Electrică
               </Link>
               <Link href={getHref(basePath, "services")} className="inline-flex items-center rounded-full border border-[#101820]/10 bg-white px-5 py-3 text-sm font-semibold text-[#101820] transition hover:border-[#101820]/25">
-                Explore Services <ArrowRight className="ml-2 h-4 w-4" />
+                Explorează Serviciile <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              {["Emergency-ready call flow", "Safety and upgrade positioning", "Structured for service-page SEO"].map((item) => (
+              {["Flux rapid pentru urgențe", "Poziționare pe siguranță și modernizări", "Structurat pentru SEO pe servicii"].map((item) => (
                 <div key={item} className="rounded-2xl border border-[#101820]/10 bg-white px-4 py-4 text-sm text-[#59636b]">
                   {item}
                 </div>
@@ -141,38 +141,38 @@ function HomePage({ basePath }: { basePath: string }) {
             <div className="relative min-h-[560px] overflow-hidden rounded-[2.5rem] bg-[#101820] shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
               <Image
                 src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80"
-                alt="Electrician working on a domestic electrical installation"
+                alt="Electrician care lucrează la o instalație electrică rezidențială"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/88 via-[#101820]/20 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-8">
-                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">Multi-page electrician concept</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">Concept multi-pagină pentru electricieni</div>
                 <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight md:text-4xl">
-                  Stronger hierarchy for faults, lighting, upgrades, certificates, and quote-first electrical enquiries.
+                  Ierarhie clară pentru defecțiuni, iluminat, tablouri, verificări și cereri rapide de preț.
                 </h2>
               </div>
             </div>
 
             <div className="grid gap-4">
               <div className="rounded-[2rem] bg-[#101820] p-5 text-white">
-                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Emergency intent</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Disponibilitate urgențe</div>
                 <div className="mt-3 text-3xl font-semibold">24/7</div>
                 <p className="mt-2 text-sm leading-relaxed text-white/78">
-                  For electricians who still need a real website structure behind urgent local calls.
+                  Pentru electricianul care are nevoie de o structură solidă în spatele apelurilor locale urgente.
                 </p>
               </div>
               <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-5">
-                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#cf9f2e]">SEO foundation</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#cf9f2e]">Bază SEO solidă</div>
                 <p className="mt-3 text-sm leading-relaxed text-[#59636b]">
-                  Room for services, area pages, FAQs, and safety-led trust content from the start.
+                  Spațiu dedicat pentru pagini de servicii, zone de acoperire, întrebări frecvente și conținut de siguranță.
                 </p>
               </div>
               <div className="rounded-[2rem] border border-[#101820]/10 bg-[#fff5de] p-5">
-                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#101820]">Service blend</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#101820]">Portofoliu mixt</div>
                 <p className="mt-3 text-sm leading-relaxed text-[#4f5860]">
-                  Built for homeowners, landlords, upgrades, emergency faults, and repeat maintenance work.
+                  Ideal pentru proprietari de locuințe, modernizări, panouri electrice și mentenanță pe termen lung.
                 </p>
               </div>
             </div>
@@ -183,32 +183,32 @@ function HomePage({ basePath }: { basePath: string }) {
       <section className="border-y border-[#101820]/10 bg-white">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-16 lg:grid-cols-[0.88fr_1.12fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Why this structure works</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">De ce funcționează această structură</p>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[#101820]">
-              Electrician websites need clearer safety, urgency, and service separation than most generic trade templates give them.
+              Site-urile pentru electricieni au nevoie de mai multă claritate privind siguranța și urgențele decât șabloanele generice.
             </h2>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
             {[
               {
                 icon: Zap,
-                title: "Fault-finding and urgent response",
-                copy: "The layout supports click-to-call behaviour for urgent electrical issues without turning the whole site into a shallow emergency page.",
+                title: "Depanare și răspuns rapid",
+                copy: "Designul încurajează apelul telefonic rapid pentru probleme electrice urgente, fără a transforma tot site-ul într-o pagină superficială.",
               },
               {
                 icon: ShieldCheck,
-                title: "Certificates and trust signals",
-                copy: "Useful when the business needs to talk about safety, inspections, remedials, and homeowner reassurance alongside core electrical work.",
+                title: "Certificate și semne de încredere",
+                copy: "Esențial atunci când afacerea discută despre siguranță, inspecții, remedieri și garanții pentru lucrările efectuate.",
               },
               {
                 icon: BatteryCharging,
-                title: "Upgrade and renovation fit",
-                copy: "A stronger base for consumer units, lighting upgrades, extension work, and higher-value domestic electrical projects.",
+                title: "Modernizări și extinderi",
+                copy: "O bază solidă pentru panouri electrice, proiecte de iluminat, renovări și lucrări rezidențiale cu valoare ridicată.",
               },
               {
                 icon: Sparkles,
-                title: "Expansion-ready SEO base",
-                copy: "Built to grow into service pages, coverage pages, FAQs, and neighborhood-specific local content over time.",
+                title: "Optimizare SEO pregătită",
+                copy: "Construit pentru a crește organic prin pagini dedicate de servicii, zone deservite, întrebări frecvente și conținut local.",
               },
             ].map((item) => (
               <div key={item.title} className="rounded-[1.75rem] border border-[#101820]/10 bg-[#f6f8f7] p-5">
@@ -224,13 +224,13 @@ function HomePage({ basePath }: { basePath: string }) {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Core electrical services</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Servicii electrice principale</p>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[#101820]">
-              Comprehensive enough for a real electrician business, not just a placeholder starter.
+              Suficient de complex pentru o afacere reală de electrician, nu doar o pagină de start provizorie.
             </h2>
           </div>
           <p className="max-w-xl text-sm leading-relaxed text-[#59636b]">
-            The first electrician template is intentionally broad enough for urgent callouts, homeowner upgrades, lighting work, certificates, and landlord-led support.
+            Structura este gândită pentru apeluri de urgență, modernizări casnice, lucrări de iluminat, verificări și suport dedicat clienților rezidențiali.
           </p>
         </div>
 
@@ -247,8 +247,8 @@ function HomePage({ basePath }: { basePath: string }) {
       <section className="bg-[#101820] py-16 text-white">
         <div className="mx-auto grid max-w-6xl gap-8 px-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f3d17a]">Enquiry process</p>
-            <h2 className="mt-3 text-4xl font-semibold tracking-tight">Built around how local electrical jobs actually get won.</h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f3d17a]">Procesul de preluare</p>
+            <h2 className="mt-3 text-4xl font-semibold tracking-tight">Construit în jurul modului în care se obțin lucrările locale.</h2>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {processSteps.map((step) => (
@@ -268,8 +268,8 @@ function ServicesPage() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
       <div className="mb-8">
-        <div className="text-sm font-semibold uppercase tracking-[0.16em] text-[#cf9f2e]">Services page direction</div>
-        <h1 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight text-[#101820]">Service lines arranged for electrician buying behaviour, not generic trade filler.</h1>
+        <div className="text-sm font-semibold uppercase tracking-[0.16em] text-[#cf9f2e]">Pagina de servicii</div>
+        <h1 className="mt-3 max-w-3xl text-5xl font-semibold leading-tight text-[#101820]">Servicii structurate după comportamentul clienților, nu texte generice.</h1>
       </div>
       <div className="space-y-4">
         {services.map((service, index) => (
@@ -279,7 +279,7 @@ function ServicesPage() {
               <h2 className="text-2xl font-semibold text-[#101820]">{service.title}</h2>
               <p className="mt-2 text-sm leading-relaxed text-[#59636b]">{service.copy}</p>
             </div>
-            <div className="rounded-full bg-[#cf9f2e] px-4 py-2 text-sm font-semibold text-[#101820]">Get quote</div>
+            <div className="rounded-full bg-[#cf9f2e] px-4 py-2 text-sm font-semibold text-[#101820]">Cere ofertă</div>
           </div>
         ))}
       </div>
@@ -292,26 +292,26 @@ function QuotePage({ basePath }: { basePath: string }) {
     <section className="mx-auto max-w-6xl px-6 py-16">
       <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr]">
         <div className="rounded-[2rem] bg-[#101820] p-8 text-white">
-          <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Electrical quote flow</div>
-          <h1 className="mt-4 text-4xl font-semibold leading-tight">Shorter path for serious electrical enquiries.</h1>
+          <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Formular de ofertă</div>
+          <h1 className="mt-4 text-4xl font-semibold leading-tight">Modalitate rapidă pentru cereri serioase.</h1>
           <div className="mt-6 space-y-3 text-sm text-white/80">
-            <div>Built for faults, upgrades, and planned domestic jobs</div>
-            <div>Works for emergency calls and certificate-led enquiries</div>
-            <div>Easy fallback to direct calling when urgency matters</div>
+            <div>Pregătit pentru defecțiuni, panouri și lucrări casnice</div>
+            <div>Funcțional pentru urgențe și verificări periodice</div>
+            <div>Opțiune simplă pentru apel direct când timpul contează</div>
           </div>
           <Link href={getHref(basePath, "services")} className="mt-8 inline-flex items-center rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white">
-            View Electrical Services <ArrowRight className="ml-2 h-4 w-4" />
+            Vezi Serviciile Electrice <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>
         <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-6">
           <div className="grid gap-4 sm:grid-cols-2">
-            {["Full name", "Phone number", "Postcode", "Preferred time", "What electrical work is needed?"].map((field, index) => (
+            {["Nume complet", "Număr de telefon", "Adresă / Zonă", "Ora preferată", "Ce1 lucrări electrice sunt necesare?"].map((field, index) => (
               <div key={field} className={`rounded-xl border border-[#101820]/10 px-4 py-3 text-sm text-gray-500 ${index === 4 ? "sm:col-span-2" : ""}`}>
                 {field}
               </div>
             ))}
           </div>
-          <div className="mt-5 inline-flex rounded-full bg-[#cf9f2e] px-5 py-3 text-sm font-semibold text-[#101820]">Request electrical quote</div>
+          <div className="mt-5 inline-flex rounded-full bg-[#cf9f2e] px-5 py-3 text-sm font-semibold text-[#101820]">Trimite solicitarea</div>
         </div>
       </div>
     </section>
@@ -324,26 +324,26 @@ function Footer({ basePath }: { basePath: string }) {
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">Northwire Electric</div>
+            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">VoltGuard Electric</div>
             <p className="mt-4 text-sm leading-relaxed text-[#59636b]">
-              Domestic electrical work, upgrades, and local fault support with a cleaner digital structure for urgent jobs, homeowner trust, and long-term SEO growth.
+              Instalații electrice rezidențiale, modernizări și asistență locală pentru defecțiuni, cu o structură digitală curată pentru urgențe, încredere și creștere SEO pe termen lung.
             </p>
           </div>
           <div className="text-sm text-[#59636b]">
-            <Link href={getHref(basePath, "home")} className="block">Home</Link>
-            <Link href={getHref(basePath, "services")} className="mt-2 block">Services</Link>
-            <Link href={getHref(basePath, "quote")} className="mt-2 block">Quote</Link>
+            <Link href={getHref(basePath, "home")} className="block">Acasă</Link>
+            <Link href={getHref(basePath, "services")} className="mt-2 block">Servicii</Link>
+            <Link href={getHref(basePath, "quote")} className="mt-2 block">Ofertă</Link>
           </div>
           <div className="text-sm text-[#59636b]">
-            <div>0131 333 0880</div>
-            <div className="mt-2">hello@northwireelectric.co</div>
-            <div className="mt-2">Edinburgh and surrounding areas</div>
+            <div>0721 000 000</div>
+            <div className="mt-2">contact@voltguard.ro</div>
+            <div className="mt-2">Brașov și împrejurimi</div>
           </div>
         </div>
 
         <div className="mt-10 border-t border-[#101820]/10 pt-6 text-sm text-[#59636b]">
           <a href="https://twosquares.co.uk" target="_blank" rel="noopener noreferrer">
-            Website Developed by TwoSquares
+            Website Dezvoltat de TwoSquares
           </a>
         </div>
       </div>
@@ -368,8 +368,8 @@ export default function ElectricianTemplateSite({
         <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-7">
           <div className="grid gap-6 md:grid-cols-[1fr_1.1fr] md:items-start">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Coverage and trust</p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#101820]">Ready for service-area pages, reviews, and local visibility growth.</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Acoperire și încredere</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#101820]">Pregătit pentru pagini de zonă, recenzii și vizibilitate locală crescută.</h2>
             </div>
             <div>
               <div className="flex flex-wrap gap-2">
