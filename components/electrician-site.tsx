@@ -124,7 +124,7 @@ function HomePage({ basePath }: { basePath: string }) {
 
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href={getHref(basePath, "quote")} className="inline-flex items-center rounded-full bg-[#cf9f2e] px-5 py-3 text-sm font-semibold text-[#101820] transition hover:bg-[#b88d29]">
-                Solicită o Ofertă Electrică
+                Solicită o Ofertă
               </Link>
               <Link href={getHref(basePath, "services")} className="inline-flex items-center rounded-full border border-[#101820]/10 bg-white px-5 py-3 text-sm font-semibold text-[#101820] transition hover:border-[#101820]/25">
                 Explorează Serviciile <ArrowRight className="ml-2 h-4 w-4" />
