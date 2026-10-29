@@ -93,10 +93,15 @@ function SiteHeader({ currentPage, basePath }: { currentPage: ElectricianPage; b
 
         <PreviewNav currentPage={currentPage} basePath={basePath} />
 
-        <a href="tel:+40721000000" className="inline-flex items-center rounded-full bg-[#101820] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#1d2a36]">
-          <PhoneCall className="mr-2 h-4 w-4" />
-          0721 000 000
-        </a>
+        <a
+  href="tel:+40721000000"
+  className="inline-flex items-center gap-2 rounded-full bg-[#101820] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#1d2a36] hover:scale-[1.02]"
+>
+  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 text-[#cf9f2e]">
+    <PhoneCall className="h-4 w-4" />
+  </span>
+  <span>0721 000 000</span>
+</a>
       </div>
     </header>
   )
