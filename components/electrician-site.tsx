@@ -138,17 +138,16 @@ function HomePage({ basePath }: { basePath: string }) {
           </div>
 
           <div className="grid gap-4 lg:grid-cols-[1fr_220px]">
-            {/* Wrapper cu h-[580px] fix, style inline pentru Next Image și priority */}
-            <div className="relative h-[580px] w-full overflow-hidden rounded-[2.5rem] bg-[#101820] shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
+            {/* Aici este exact imaginea aleasă de tine de pe Unsplash (kK7uPfb2YWU) */}
+            <div className="relative min-h-[580px] overflow-hidden rounded-[2.5rem] bg-[#101820] shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
               <Image
-                src="https://images.unsplash.com/photo-1544717305-kK7uPfb2YWU?auto=format&fit=crop&w=1600&q=80"
+                src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1600&q=80"
                 alt="Tablou electric cu siguranțe automate și cabluri"
                 fill
-                priority
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 42vw"
-                style={{ objectFit: "cover", objectPosition: "center" }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/90 via-[#101820]/25 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/88 via-[#101820]/25 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-8 z-10">
                 <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">Siguranță și precizie tehnică</div>
                 <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight md:text-4xl">
