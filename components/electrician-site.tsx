@@ -138,15 +138,16 @@ function HomePage({ basePath }: { basePath: string }) {
           </div>
 
           <div className="grid gap-4 lg:grid-cols-[1fr_220px]">
-            <div className="relative flex min-h-[560px] items-center justify-center overflow-hidden rounded-[2.5rem] bg-[#101820] p-6 shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
+            {/* Aici este exact imaginea aleasă de tine de pe Unsplash (kK7uPfb2YWU) */}
+            <div className="relative min-h-[580px] overflow-hidden rounded-[2.5rem] bg-[#101820] shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
               <Image
-                src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1600&q=80"
-                alt="Tablou electric cu siguranțe automate"
+                src="https://images.unsplash.com/photo-1544717305-kK7uPfb2YWU?auto=format&fit=crop&w=1600&q=80"
+                alt="Tablou electric cu siguranțe automate și cabluri"
                 fill
-                className="object-contain p-4"
+                className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/90 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#101820]/88 via-[#101820]/25 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-white md:p-8 z-10">
                 <div className="text-xs font-semibold uppercase tracking-[0.18em] text-white/70">Siguranță și precizie tehnică</div>
                 <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight md:text-4xl">
