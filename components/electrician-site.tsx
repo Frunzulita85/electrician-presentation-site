@@ -141,7 +141,7 @@ function HomePage({ basePath }: { basePath: string }) {
             {/* Imaginea actualizată cu electricianul testând panoul electric cu multimetrul (din linkul specificat) */}
             <div className="relative min-h-[560px] overflow-hidden rounded-[2.5rem] bg-[#101820] shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
               <Image
-                src="https://images.unsplash.com/photo-1726569106037-PkHf7BUWbtk?auto=format&fit=crop&w=1600&q=80"
+                src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=1600&q=80"
                 alt="Electrician testând panoul electric cu un multimetru"
                 fill
                 className="object-cover"
