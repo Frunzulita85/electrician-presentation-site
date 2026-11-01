@@ -77,6 +77,20 @@ function getHref(basePath: string, page: ElectricianPage) {
   return `${basePath}/${page}`
 }
 
+function DemoBanner() {
+  return (
+    <div className="bg-[#101820] px-4 py-2.5 text-center text-xs font-medium text-white md:text-sm">
+      <span className="text-[#cf9f2e] font-semibold">SITE DEMO DE VÂNZARE:</span> Ești electrician în Cluj și vrei acest site personalizat cu datele tale?{" "}
+      <a
+        href="#cumpara-site"
+        className="ml-2 inline-flex items-center underline text-[#cf9f2e] hover:text-white font-semibold transition"
+      >
+        Află detalii & Solicită oferta →
+      </a>
+    </div>
+  )
+}
+
 function PreviewNav({ currentPage, basePath }: { currentPage: ElectricianPage; basePath: string }) {
   const items = [
     { label: "Acasă", href: getHref(basePath, "home"), page: "home" as const },
@@ -107,7 +121,7 @@ function SiteHeader({ currentPage, basePath }: { currentPage: ElectricianPage; b
         <PreviewNav currentPage={currentPage} basePath={basePath} />
 
         <a
-          href="tel:+40742000000"
+          href="tel:+40747856267"
           className="inline-flex items-center gap-2 rounded-full bg-[#cf9f2e] px-4 py-2 text-sm font-semibold text-[#101820] shadow-md transition hover:bg-[#b88d29]"
         >
           <PhoneCall className="h-4 w-4" />
@@ -327,7 +341,7 @@ function QuotePage({ basePath }: { basePath: string }) {
           </div>
           <div className="mt-8 pt-6 border-t border-white/10">
             <div className="text-xs uppercase tracking-wider text-white/60">Apel direct urgențe</div>
-            <a href="tel:+40742000000" className="mt-1 block text-2xl font-bold text-[#cf9f2e]">0742 000 000</a>
+            <a href="tel:+40747856267" className="mt-1 block text-2xl font-bold text-[#cf9f2e]">0747 856 267</a>
           </div>
         </div>
         <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-6 sm:p-8">
@@ -345,6 +359,63 @@ function QuotePage({ basePath }: { basePath: string }) {
           <div className="mt-6 inline-flex w-full sm:w-auto justify-center rounded-full bg-[#cf9f2e] px-6 py-3 text-sm font-semibold text-[#101820] shadow-md cursor-pointer hover:bg-[#b88d29] transition">
             Trimite Solicitarea
           </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function BuyWebsiteSection() {
+  return (
+    <section id="cumpara-site" className="mx-auto max-w-6xl px-6 py-16">
+      <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr]">
+        <div className="rounded-[2rem] bg-[#101820] p-8 text-white flex flex-col justify-between">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#cf9f2e]">
+              Oferta ta digitală
+            </div>
+            <h2 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">
+              Vrei ca acest site să fie al tău în 48 de ore?
+            </h2>
+            <p className="mt-4 text-sm text-white/80 leading-relaxed">
+              Preluăm acest șablon, îl personalizăm cu numele tău, logoul, numărul tău de telefon, pozele și prețurile tale, apoi îl lansăm pe domeniul tău web.
+            </p>
+            <div className="mt-6 space-y-3 text-sm text-white/80">
+              <div className="flex items-center gap-2">✓ Optimizat 100% pentru mobil și Google (SEO Cluj)</div>
+              <div className="flex items-center gap-2">✓ Configurare rapidă fără cunoștințe tehnice</div>
+              <div className="flex items-center gap-2">✓ Suport tehnic & găzduire incluse</div>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-white/10">
+            <div className="text-xs uppercase tracking-wider text-white/60">Sună-mă direct pentru detalii</div>
+            <a href="tel:+40747856267" className="mt-1 block text-2xl font-bold text-[#cf9f2e]">
+              0747 856 267
+            </a>
+          </div>
+        </div>
+
+        <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-6 sm:p-8">
+          <h3 className="text-2xl font-semibold text-[#101820] mb-2">Solicită configurarea site-ului</h3>
+          <p className="text-sm text-[#59636b] mb-6">Lasă-ne datele tale și te sunăm în maxim 2 ore pentru a discuta detaliile.</p>
+
+          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <div>
+              <label className="block text-xs font-semibold text-[#101820] uppercase mb-1">Numele tău / Numele Firmei</label>
+              <input type="text" placeholder="ex: Popescu Ion" className="w-full rounded-xl border border-[#101820]/15 p-3 text-sm outline-none focus:border-[#cf9f2e]" />
+            </div>
+            <div>
+              <label className="block text-xs font-semibold text-[#101820] uppercase mb-1">Numărul tău de telefon</label>
+              <input type="tel" placeholder="07XX XXX XXX" className="w-full rounded-xl border border-[#101820]/15 p-3 text-sm outline-none focus:border-[#cf9f2e]" />
+            </div>
+            <div>
+              <label className="block text-xs font-semibold text-[#101820] uppercase mb-1">Ai deja un domeniu web / logo?</label>
+              <input type="text" placeholder="ex: Da / Nu / Am nevoie de ajutor" className="w-full rounded-xl border border-[#101820]/15 p-3 text-sm outline-none focus:border-[#cf9f2e]" />
+            </div>
+            <button type="submit" className="w-full rounded-full bg-[#cf9f2e] py-3.5 text-sm font-semibold text-[#101820] shadow-md hover:bg-[#b88d29] transition cursor-pointer">
+              Vreau să fiu sunat pentru ofertă
+            </button>
+          </form>
         </div>
       </div>
     </section>
@@ -370,7 +441,7 @@ function Footer({ basePath }: { basePath: string }) {
           </div>
           <div className="text-sm text-[#59636b]">
             <div className="font-semibold text-[#101820] mb-2">Contact & Program</div>
-            <div className="font-medium text-[#101820]">0742 000 000</div>
+            <div className="font-medium text-[#101820]">0747 856 267</div>
             <div className="mt-1">contact@voltaic-cluj.ro</div>
             <div className="mt-1">Cluj-Napoca, Florești, Baciu, Apahida</div>
           </div>
@@ -396,6 +467,7 @@ export default function ElectricianTemplateSite({
 }) {
   return (
     <div className="min-h-screen bg-[#eef2f1] text-[#101820]">
+      <DemoBanner />
       <SiteHeader currentPage={currentPage} basePath={basePath} />
       {currentPage === "home" ? <HomePage basePath={basePath} /> : null}
       {currentPage === "services" ? <ServicesPage /> : null}
@@ -435,6 +507,8 @@ export default function ElectricianTemplateSite({
           </div>
         </div>
       </section>
+
+      <BuyWebsiteSection />
 
       <Footer basePath={basePath} />
     </div>
