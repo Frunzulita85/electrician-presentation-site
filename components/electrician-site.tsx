@@ -85,7 +85,7 @@ function DemoBanner() {
         href="#cumpara-site"
         className="ml-2 inline-flex items-center underline text-[#cf9f2e] hover:text-white font-semibold transition"
       >
-        Află detalii & Solicită oferta →
+        Află detalii & Sună acum →
       </a>
     </div>
   )
@@ -331,33 +331,37 @@ function QuotePage({ basePath }: { basePath: string }) {
             <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Contact rapid</div>
             <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">Ai nevoie de un electrician în Cluj? Hai să discutăm.</h1>
             <p className="mt-4 text-sm text-white/80 leading-relaxed">
-              Completează formularul alăturat cu detaliile lucrării sau sună direct la numărul de telefon afișat pentru intervenții urgente în Cluj-Napoca și împrejurimi.
+              Sună direct la numărul de telefon afișat sau scrie-ne pe WhatsApp pentru intervenții urgente în Cluj-Napoca și împrejurimi.
             </p>
-            <div className="mt-6 space-y-3 text-sm text-white/80">
-              <div className="flex items-center gap-2">✓ Răspuns rapid în cursul zilei</div>
-              <div className="flex items-center gap-2">✓ Deplasare în Cluj și zonele limitrofe</div>
-              <div className="flex items-center gap-2">✓ Estimare corectă a costurilor</div>
-            </div>
           </div>
           <div className="mt-8 pt-6 border-t border-white/10">
             <div className="text-xs uppercase tracking-wider text-white/60">Apel direct urgențe</div>
             <a href="tel:+40747856267" className="mt-1 block text-2xl font-bold text-[#cf9f2e]">0747 856 267</a>
           </div>
         </div>
-        <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-6 sm:p-8">
-          <h2 className="text-2xl font-semibold text-[#101820] mb-6">Trimite o solicitare de ofertă</h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {["Nume complet", "Număr de telefon", "Adresă / Cartier (ex: Mărăști, Florești)", "Tip lucrare (Urgență / Modernizare / Altele)"].map((field, index) => (
-              <div key={field} className={`rounded-xl border border-[#101820]/10 px-4 py-3 text-sm text-gray-400 bg-gray-50/50 ${index === 3 ? "sm:col-span-2" : ""}`}>
-                {field}
-              </div>
-            ))}
-            <div className="rounded-xl border border-[#101820]/10 px-4 py-3 text-sm text-gray-400 bg-gray-50/50 sm:col-span-2 h-28">
-              Descrie scurt problema sau lucrarea electrică necesară...
-            </div>
-          </div>
-          <div className="mt-6 inline-flex w-full sm:w-auto justify-center rounded-full bg-[#cf9f2e] px-6 py-3 text-sm font-semibold text-[#101820] shadow-md cursor-pointer hover:bg-[#b88d29] transition">
-            Trimite Solicitarea
+
+        <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-8 flex flex-col justify-center items-center text-center">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e] mb-2">Conexiune instantanee</div>
+          <h2 className="text-2xl font-semibold text-[#101820] mb-3">Preferi apelul direct?</h2>
+          <p className="text-sm text-[#59636b] mb-6 max-w-md">
+            Meseriașii din Cluj răspund cel mai repede la telefon sau WhatsApp. Ia legătura direct cu noi pentru orice urgență sau lucrare.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
+            <a
+              href="tel:+40747856267"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#cf9f2e] px-6 py-3.5 text-sm font-bold text-[#101820] shadow-md hover:bg-[#b88d29] transition"
+            >
+              <PhoneCall className="h-4 w-4" />
+              <span>Sună: 0747 856 267</span>
+            </a>
+            <a
+              href="https://wa.me/40747856267?text=Salut,%20am%20nevoie%20de%20un%20electrician%20in%20Cluj."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white shadow-md hover:bg-[#20ba5a] transition"
+            >
+              <span>💬 WhatsApp Direct</span>
+            </a>
           </div>
         </div>
       </div>
@@ -368,54 +372,42 @@ function QuotePage({ basePath }: { basePath: string }) {
 function BuyWebsiteSection() {
   return (
     <section id="cumpara-site" className="mx-auto max-w-6xl px-6 py-16">
-      <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr]">
-        <div className="rounded-[2rem] bg-[#101820] p-8 text-white flex flex-col justify-between">
-          <div>
-            <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#cf9f2e]">
-              Oferta ta digitală
-            </div>
-            <h2 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">
-              Vrei ca acest site să fie al tău în 48 de ore?
-            </h2>
-            <p className="mt-4 text-sm text-white/80 leading-relaxed">
-              Preluăm acest șablon, îl personalizăm cu numele tău, logoul, numărul tău de telefon, pozele și prețurile tale, apoi îl lansăm pe domeniul tău web.
-            </p>
-            <div className="mt-6 space-y-3 text-sm text-white/80">
-              <div className="flex items-center gap-2">✓ Optimizat 100% pentru mobil și Google (SEO Cluj)</div>
-              <div className="flex items-center gap-2">✓ Configurare rapidă fără cunoștințe tehnice</div>
-              <div className="flex items-center gap-2">✓ Suport tehnic & găzduire incluse</div>
-            </div>
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-white/10">
-            <div className="text-xs uppercase tracking-wider text-white/60">Sună-mă direct pentru detalii</div>
-            <a href="tel:+40747856267" className="mt-1 block text-2xl font-bold text-[#cf9f2e]">
-              0747 856 267
-            </a>
-          </div>
+      <div className="rounded-[2.5rem] bg-[#101820] p-8 md:p-12 text-white shadow-xl text-center">
+        <div className="inline-flex items-center rounded-full bg-[#cf9f2e]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e] mb-4">
+          Ofertă limitată pentru electricieni în Cluj
         </div>
 
-        <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-6 sm:p-8">
-          <h3 className="text-2xl font-semibold text-[#101820] mb-2">Solicită configurarea site-ului</h3>
-          <p className="text-sm text-[#59636b] mb-6">Lasă-ne datele tale și te sunăm în maxim 2 ore pentru a discuta detaliile.</p>
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight max-w-2xl mx-auto leading-tight">
+          Vrei acest site personalizat cu datele tale în 48 de ore?
+        </h2>
 
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-            <div>
-              <label className="block text-xs font-semibold text-[#101820] uppercase mb-1">Numele tău / Numele Firmei</label>
-              <input type="text" placeholder="ex: Popescu Ion" className="w-full rounded-xl border border-[#101820]/15 p-3 text-sm outline-none focus:border-[#cf9f2e]" />
-            </div>
-            <div>
-              <label className="block text-xs font-semibold text-[#101820] uppercase mb-1">Numărul tău de telefon</label>
-              <input type="tel" placeholder="07XX XXX XXX" className="w-full rounded-xl border border-[#101820]/15 p-3 text-sm outline-none focus:border-[#cf9f2e]" />
-            </div>
-            <div>
-              <label className="block text-xs font-semibold text-[#101820] uppercase mb-1">Ai deja un domeniu web / logo?</label>
-              <input type="text" placeholder="ex: Da / Nu / Am nevoie de ajutor" className="w-full rounded-xl border border-[#101820]/15 p-3 text-sm outline-none focus:border-[#cf9f2e]" />
-            </div>
-            <button type="submit" className="w-full rounded-full bg-[#cf9f2e] py-3.5 text-sm font-semibold text-[#101820] shadow-md hover:bg-[#b88d29] transition cursor-pointer">
-              Vreau să fiu sunat pentru ofertă
-            </button>
-          </form>
+        <p className="mt-4 text-base md:text-lg text-white/80 max-w-xl mx-auto leading-relaxed">
+          Nu pierde timpul cu formulare lungi. Sună-ne direct sau dă-ne un mesaj pe WhatsApp și îl configurăm imediat pentru afacerea ta.
+        </p>
+
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="tel:+40747856267"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-[#cf9f2e] px-8 py-4 text-base font-bold text-[#101820] shadow-lg hover:bg-[#b88d29] transition transform hover:-translate-y-0.5"
+          >
+            <PhoneCall className="h-5 w-5" />
+            <span>Sună Acum: 0747 856 267</span>
+          </a>
+
+          <a
+            href="https://wa.me/40747856267?text=Salut,%20am%20vazut%20site-ul%20demo%20pentru%20electrician%20in%20Cluj%20si%20sunt%20interesat%20sa-l%20cumpar!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-[#20ba5a] transition transform hover:-translate-y-0.5"
+          >
+            <span>💬 Scrie-ne pe WhatsApp</span>
+          </a>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-white/70">
+          <div>✓ Fără avans sau bătăi de cap</div>
+          <div>✓ Optimizat complet pentru Google & Mobil</div>
+          <div>✓ Găzduire și suport incluse</div>
         </div>
       </div>
     </section>
