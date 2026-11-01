@@ -111,7 +111,7 @@ function SiteHeader({ currentPage, basePath }: { currentPage: ElectricianPage; b
           className="inline-flex items-center gap-2 rounded-full bg-[#cf9f2e] px-4 py-2 text-sm font-semibold text-[#101820] shadow-md transition hover:bg-[#b88d29]"
         >
           <PhoneCall className="h-4 w-4" />
-          <span>0742 000 000</span>
+          <span>0747 856 267</span>
         </a>
       </div>
     </header>
