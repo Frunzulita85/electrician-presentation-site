@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf14dda1-4308-4c87-bcbb-9629648584a5" name="Changes" comment="">
+    <list default="true" id="fb8ba68d-7b3d-4eab-a87d-4f0b26fb5fe6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/electrician-services-starter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +35,7 @@
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="3LXsMbsstwatovtfFv7MKL5Qo4m" />
+  <component name="ProjectId" id="3LXyXMn9YSeUJidqN5uzNc9aWd1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -51,11 +58,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bf14dda1-4308-4c87-bcbb-9629648584a5" name="Changes" comment="" />
-      <created>1793611699438</created>
+      <changelist id="fb8ba68d-7b3d-4eab-a87d-4f0b26fb5fe6" name="Changes" comment="" />
+      <created>1793614745818</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1793611699438</updated>
+      <updated>1793614745818</updated>
     </task>
     <servers />
   </component>

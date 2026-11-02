@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { getSiteUrl } from "../lib/site-url"
 import "./globals.css"
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
