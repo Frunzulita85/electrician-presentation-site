@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b36997db-e32f-4c74-853b-d2a7c1088eac" name="Changes" comment="">
+    <list default="true" id="bf14dda1-4308-4c87-bcbb-9629648584a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/electrician-services-starter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +33,7 @@
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="3LW5S4nnpQX0YyyQQe2lVYx7nNt" />
+  <component name="ProjectId" id="3LXsMbsstwatovtfFv7MKL5Qo4m" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,7 +42,6 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main"
   }
@@ -51,11 +55,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b36997db-e32f-4c74-853b-d2a7c1088eac" name="Changes" comment="" />
-      <created>1793556980069</created>
+      <changelist id="bf14dda1-4308-4c87-bcbb-9629648584a5" name="Changes" comment="" />
+      <created>1793611699438</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1793556980069</updated>
+      <updated>1793611699438</updated>
     </task>
     <servers />
   </component>

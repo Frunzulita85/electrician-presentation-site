@@ -4,7 +4,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "VoltGuard Electric | Servicii Electrice & Depanare Rapidă Brașov",
+  title: "Voltaic Cluj Electric",
   description:
     "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
   keywords: [
