@@ -5,22 +5,22 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Voltaic Cluj Electric | Servicii Electrician Autorizat Cluj",
+  title: "Voltaic Brașov Electric | Servicii Electrician Autorizat Brașov",
   description:
-    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Cluj-Napoca și împrejurimi.",
+    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
   keywords: [
-    "electrician Cluj",
-    "electrician Cluj Napoca",
-    "interventii electrice urgenta Cluj",
-    "reparatii instalatii electrice Cluj",
-    "schimbare tablou electric Cluj",
-    "servicii electrician autorizat",
-    "depanare electrica Cluj"
+    "electrician Brasov",
+    "electrician autorizat Brasov",
+    "interventii electrice urgenta Brasov",
+    "reparatii instalatii electrice Brasov",
+    "schimbare tablou electric Brasov",
+    "servicii electrician ANRE Brasov",
+    "depanare electrica Brasov"
   ],
   openGraph: {
-    title: "Voltaic Cluj Electric | Servicii Electrician Autorizat Cluj",
+    title: "Voltaic Brașov Electric | Servicii Electrician Autorizat Brașov",
     description:
-      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Cluj-Napoca și împrejurimi.",
+      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
     type: "website",
     locale: "ro_RO",
   },
