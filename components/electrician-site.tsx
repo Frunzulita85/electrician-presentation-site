@@ -53,7 +53,7 @@ const serviceAreas = [
   "Astra",
   "Tractorul",
   "Coresi",
-  "Noui",
+  "Noua",
   "Șchei",
   "Răcădău",
   "Bartolomeu",
@@ -327,4 +327,184 @@ function ServicesPage() {
 function QuotePage({ basePath }: { basePath: string }) {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
-      <div className="grid gap-6 lg:grid-cols-[0.82fr_1
+      <div className="grid gap-6 lg:grid-cols-[0.82fr_1.18fr]">
+        <div className="rounded-[2rem] bg-[#101820] p-8 text-white flex flex-col justify-between">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Contact rapid</div>
+            <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">Ai nevoie de un electrician în Brașov? Hai să discutăm.</h1>
+            <p className="mt-4 text-sm text-white/80 leading-relaxed">
+              Sună direct la numărul de telefon afișat sau scrie-ne pe WhatsApp pentru intervenții urgente în Brașov și împrejurimi.
+            </p>
+          </div>
+          <div className="mt-8 pt-6 border-t border-white/10">
+            <div className="text-xs uppercase tracking-wider text-white/60">Apel direct urgențe</div>
+            <a href="tel:+40747856267" className="mt-1 block text-2xl font-bold text-[#cf9f2e]">0747 856 267</a>
+          </div>
+        </div>
+
+        <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-8 flex flex-col justify-center items-center text-center">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e] mb-2">Conexiune instantanee</div>
+          <h2 className="text-2xl font-semibold text-[#101820] mb-3">Preferi apelul direct?</h2>
+          <p className="text-sm text-[#59636b] mb-6 max-w-md">
+            Meseriașii din Brașov răspund cel mai repede la telefon sau WhatsApp. Ia legătura direct cu noi pentru orice urgență sau lucrare.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
+            <a
+              href="tel:+40747856267"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#cf9f2e] px-6 py-3.5 text-sm font-bold text-[#101820] shadow-md hover:bg-[#b88d29] transition"
+            >
+              <PhoneCall className="h-4 w-4" />
+              <span>Sună: 0747 856 267</span>
+            </a>
+            <a
+              href="https://wa.me/40747856267?text=Salut,%20am%20nevoie%20de%20un%20electrician%20in%20Brasov."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white shadow-md hover:bg-[#20ba5a] transition"
+            >
+              <span>💬 WhatsApp Direct</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function BuyWebsiteSection() {
+  return (
+    <section id="cumpara-site" className="mx-auto max-w-6xl px-6 py-16">
+      <div className="rounded-[2.5rem] bg-[#101820] p-8 md:p-12 text-white shadow-xl text-center">
+        <div className="inline-flex items-center rounded-full bg-[#cf9f2e]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e] mb-4">
+          Ofertă limitată pentru electricieni în Brașov
+        </div>
+
+        <h2 className="text-3xl md:text-5xl font-semibold tracking-tight max-w-2xl mx-auto leading-tight">
+          Vrei acest site personalizat cu datele tale în 48 de ore?
+        </h2>
+
+        <p className="mt-4 text-base md:text-lg text-white/80 max-w-xl mx-auto leading-relaxed">
+          Nu pierde timpul cu formulare lungi. Sună-ne direct sau dă-ne un mesaj pe WhatsApp și îl configurăm imediat pentru afacerea ta.
+        </p>
+
+        <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="tel:+40747856267"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-[#cf9f2e] px-8 py-4 text-base font-bold text-[#101820] shadow-lg hover:bg-[#b88d29] transition transform hover:-translate-y-0.5"
+          >
+            <PhoneCall className="h-5 w-5" />
+            <span>Sună Acum: 0747 856 267</span>
+          </a>
+
+          <a
+            href="https://wa.me/40747856267?text=Salut,%20am%20vazut%20site-ul%20demo%20pentru%20electrician%20in%20Brasov%20si%20sunt%20interesat%20sa-l%20cumpar!"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-[#20ba5a] transition transform hover:-translate-y-0.5"
+          >
+            <span>💬 Scrie-ne pe WhatsApp</span>
+          </a>
+        </div>
+
+        <div className="mt-8 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-white/70">
+          <div>✓ Fără avans sau bătăi de cap</div>
+          <div>✓ Optimizat complet pentru Google & Mobil</div>
+          <div>✓ Găzduire și suport incluse</div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+function Footer({ basePath }: { basePath: string }) {
+  return (
+    <footer className="border-t border-[#101820]/10 bg-white/70">
+      <div className="mx-auto max-w-6xl px-6 py-14">
+        <div className="grid gap-8 md:grid-cols-3">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">Voltaic Brașov Electric</div>
+            <p className="mt-4 text-sm leading-relaxed text-[#59636b]">
+              Servicii electrice autorizate ANRE în Brașov și zona metropolitană. Intervenții rapide, montaj tablouri și instalații sigure pentru locuința ta.
+            </p>
+          </div>
+          <div className="text-sm text-[#59636b]">
+            <div className="font-semibold text-[#101820] mb-2">Navigare rapidă</div>
+            <Link href={getHref(basePath, "home")} className="block hover:text-[#101820]">Acasă</Link>
+            <Link href={getHref(basePath, "services")} className="mt-2 block hover:text-[#101820]">Servicii</Link>
+            <Link href={getHref(basePath, "quote")} className="mt-2 block hover:text-[#101820]">Ofertă / Contact</Link>
+          </div>
+          <div className="text-sm text-[#59636b]">
+            <div className="font-semibold text-[#101820] mb-2">Contact & Program</div>
+            <div className="font-medium text-[#101820]">0747 856 267</div>
+            <div className="mt-1">contact@voltaic-brasov.ro</div>
+            <div className="mt-1">Brașov, Săcele, Ghimbav, Râșnov, Cristian</div>
+          </div>
+        </div>
+
+        <div className="mt-10 border-t border-[#101820]/10 pt-6 flex flex-col sm:flex-row items-center justify-between text-sm text-[#59636b] gap-4">
+          <div>© {new Date().getFullYear()} Voltaic Brașov Electric. Toate drepturile rezervate.</div>
+          <a href="https://twosquares.co.uk" target="_blank" rel="noopener noreferrer" className="hover:text-[#101820] transition">
+            Website Dezvoltat de TwoSquares
+          </a>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default function ElectricianTemplateSite({
+  currentPage,
+  basePath = "",
+}: {
+  currentPage: ElectricianPage
+  basePath?: string
+}) {
+  return (
+    <div className="min-h-screen bg-[#eef2f1] text-[#101820]">
+      <DemoBanner />
+      <SiteHeader currentPage={currentPage} basePath={basePath} />
+      {currentPage === "home" ? <HomePage basePath={basePath} /> : null}
+      {currentPage === "services" ? <ServicesPage /> : null}
+      {currentPage === "quote" ? <QuotePage basePath={basePath} /> : null}
+
+      <section className="mx-auto max-w-6xl px-6 py-14">
+        <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-7 shadow-sm">
+          <div className="grid gap-6 md:grid-cols-[1fr_1.1fr] md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Zonă de acoperire</p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#101820]">
+                Prezenți prompt în toate cartierele din Brașov și împrejurimi.
+              </h2>
+              <p className="mt-3 text-sm text-[#59636b] leading-relaxed">
+                Asigurăm deplasare rapidă pentru urgențe și lucrări programate atât în oraș, cât și în zonele rezidențiale exterioare.
+              </p>
+            </div>
+            <div>
+              <div className="flex flex-wrap gap-2">
+                {serviceAreas.map((area) => (
+                  <div key={area} className="rounded-full bg-[#f6f8f7] border border-[#101820]/5 px-3.5 py-1.5 text-xs font-medium text-[#101820]">
+                    <MapPin className="mr-1 inline h-3 w-3 text-[#cf9f2e]" />
+                    {area}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t border-[#101820]/10 grid gap-6 md:grid-cols-2">
+            {reviews.map((review) => (
+              <div key={review.name} className="rounded-2xl border border-[#101820]/10 bg-[#f6f8f7] p-5">
+                <div className="text-sm font-semibold text-[#101820]">{review.name}</div>
+                <p className="mt-2 text-sm leading-relaxed text-[#59636b] italic">&ldquo;{review.quote}&rdquo;</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <BuyWebsiteSection />
+
+      <Footer basePath={basePath} />
+    </div>
+  )
+}
