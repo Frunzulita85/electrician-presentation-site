@@ -9,7 +9,7 @@ type ElectricianPage = "home" | "services" | "quote"
 const services = [
   {
     title: "Intervenții Rapide & Depanare Non-Stop",
-    copy: "Scurtcircuite, pene de curent, tablouri care sar sau mirosuri suspecte de la prize. Intervenție rapidă în Târgoviște și zonele limitrofe.",
+    copy: "Scurtcircuite, pene de curent, tablouri care sar sau mirosuri suspecte de la prize. Intervenție rapidă în Arad și zonele limitrofe.",
   },
   {
     title: "Tablouri Electrice & Automatizări",
@@ -21,7 +21,7 @@ const services = [
   },
   {
     title: "Verificări PRAM & Buletine de Măsurători",
-    copy: "Verificări periodice, buletine PRAM pentru spații comerciale, birouri, cabinete și imobile noi sau închiriate în Târgoviște.",
+    copy: "Verificări periodice, buletine PRAM pentru spații comerciale, birouri, cabinete și imobile noi sau închiriate în Arad.",
   },
   {
     title: "Reablări & Instalații Noi (Case/Apartamente)",
@@ -40,7 +40,7 @@ const processSteps = [
   },
   {
     title: "2. Deplasare & Constatare la Fața Locului",
-    copy: "Mă deplasez rapid în Târgoviște și împrejurimi, identific defectul cu aparatură profesională și îți propun soluția optimă.",
+    copy: "Mă deplasez rapid în Arad și împrejurimi, identific defectul cu aparatură profesională și îți propun soluția optimă.",
   },
   {
     title: "3. Execuție Curată & Garantată",
@@ -50,29 +50,27 @@ const processSteps = [
 
 const serviceAreas = [
   "Centru",
-  "Micro 3",
-  "Micro 4",
-  "Micro 5",
-  "Micro 6",
-  "Micro 8",
-  "Micro 9",
-  "Micro 11",
-  "Sagricom",
-  "Aninoasa",
-  "Răzvad",
-  "Șotânga",
-  "Văcărești",
-  "Ulmi"
+  "Micălaca",
+  "Grădiște",
+  "Vlaicu",
+  "Bujac",
+  "Gai",
+  "Alfa",
+  "Aradul Nou",
+  "Subcetate",
+  "Sânnicolau Mic",
+  "Confecții",
+  "Vladimirescu"
 ]
 
 const reviews = [
   {
-    name: "Mihai B. (Târgoviște - Micro 6)",
-    quote: "A intervenit rapid sâmbătă când ne-a căzut curentul în toată casa. Un profesionist desăvârșit, a identificat problema imediat.",
+    name: "Alexandru M. (Arad - Micălaca)",
+    quote: "A intervenit prompt când tabloul electric a cedat într-o seară. Foarte amabil, profesionist și a rezolvat rapid problema.",
   },
   {
-    name: "Elena D. (Aninoasa)",
-    quote: "Am colaborat pentru întreaga instalație la casa în construcție. Totul trasat exemplar, materiale de calitate și respectat termenul.",
+    name: "Sorin P. (Vladimirescu)",
+    quote: "Am colaborat pentru extinderea instalației și montajul corpurilor de iluminat la noua locuință. Recomand cu toată încrederea!",
   },
 ]
 
@@ -84,7 +82,7 @@ function getHref(basePath: string, page: ElectricianPage) {
 function DemoBanner() {
   return (
     <div className="bg-[#101820] px-4 py-2.5 text-center text-xs font-medium text-white md:text-sm">
-      <span className="text-[#cf9f2e] font-semibold">SITE DEMO DE VÂNZARE:</span> Ești electrician în Târgoviște și vrei acest site personalizat cu datele tale?{" "}
+      <span className="text-[#cf9f2e] font-semibold">SITE DEMO DE VÂNZARE:</span> Ești electrician în Arad și vrei acest site personalizat cu datele tale?{" "}
       <a
         href="#cumpara-site"
         className="ml-2 inline-flex items-center underline text-[#cf9f2e] hover:text-white font-semibold transition"
@@ -118,8 +116,8 @@ function SiteHeader({ currentPage, basePath }: { currentPage: ElectricianPage; b
     <header className="sticky top-0 z-20 border-b border-[#101820]/10 bg-[#f6f8f7]/92 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <div>
-          <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">Voltaic Târgoviște Electric</div>
-          <div className="mt-1 text-sm font-medium text-[#101820]">Electrician Autorizat ANRE • Târgoviște</div>
+          <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">Voltaic Arad Electric</div>
+          <div className="mt-1 text-sm font-medium text-[#101820]">Electrician Autorizat ANRE • Arad</div>
         </div>
 
         <PreviewNav currentPage={currentPage} basePath={basePath} />
@@ -144,13 +142,13 @@ function HomePage({ basePath }: { basePath: string }) {
         <div className="mx-auto grid max-w-6xl gap-8 px-6 py-12 md:py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <div className="inline-flex items-center rounded-full border border-[#cf9f2e]/20 bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">
-              Intervenții rapide în Târgoviște și împrejurimi
+              Intervenții rapide în Arad și împrejurimi
             </div>
             <h1 className="mt-6 max-w-2xl text-4xl font-semibold leading-[1.05] tracking-tight text-[#101820] md:text-5xl">
-              Electrician autorizat în Târgoviște pentru urgențe, tablouri și instalații sigure.
+              Electrician autorizat în Arad pentru urgențe, tablouri și instalații sigure.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#59636b]">
-              Servicii electrice profesionale pentru locuințe, case și spații comerciale. Deplasare rapidă în toate cartierele Târgoviștei și în localitățile limitrofe.
+              Servicii electrice profesionale pentru locuințe, case și spații comerciale. Deplasare rapidă în toate cartierele Aradului și în localitățile limitrofe.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -163,7 +161,7 @@ function HomePage({ basePath }: { basePath: string }) {
             </div>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              {["Autorizat ANRE", "Intervenții în Târgoviște & Împrejurimi", "Garanție pentru lucrări"].map((item) => (
+              {["Autorizat ANRE", "Intervenții în Arad & Împrejurimi", "Garanție pentru lucrări"].map((item) => (
                 <div key={item} className="rounded-2xl border border-[#101820]/10 bg-white px-4 py-4 text-sm font-medium text-[#101820]">
                   {item}
                 </div>
@@ -175,7 +173,7 @@ function HomePage({ basePath }: { basePath: string }) {
             <div className="relative h-[580px] w-full overflow-hidden rounded-[2.5rem] bg-[#101820] shadow-[0_30px_80px_rgba(16,24,32,0.18)]">
               <Image
                 src="/hero-electrician.webp"
-                alt="Electrician autorizat lucrând la un tablou electric în Târgoviște"
+                alt="Electrician autorizat lucrând la un tablou electric în Arad"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 42vw"
@@ -195,7 +193,7 @@ function HomePage({ basePath }: { basePath: string }) {
                 <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Disponibilitate</div>
                 <div className="mt-3 text-3xl font-semibold">Luni - Sâmbătă</div>
                 <p className="mt-2 text-sm leading-relaxed text-white/78">
-                  Pregătit pentru urgențe și programări la adrese din Târgoviște, Aninoasa, Răzvad și Ulmi.
+                  Pregătit pentru urgențe și programări la adrese din Arad, Vladimirescu, Sântana și Pecica.
                 </p>
               </div>
               <div className="rounded-[2rem] border border-[#101820]/10 bg-white p-5">
@@ -220,7 +218,7 @@ function HomePage({ basePath }: { basePath: string }) {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Standarde ridicate</p>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[#101820]">
-              De ce au clienții din Târgoviște nevoie de un electrician autorizat?
+              De ce au clienții din Arad nevoie de un electrician autorizat?
             </h2>
           </div>
           <div className="grid gap-4 md:grid-cols-2">
@@ -228,7 +226,7 @@ function HomePage({ basePath }: { basePath: string }) {
               {
                 icon: Zap,
                 title: "Intervenție promptă în oraș",
-                copy: "Timp de deplasare redus în toate cartierele Târgoviștei, pentru ca tu să nu pierzi timp așteptând în caz de pană sau avarie.",
+                copy: "Timp de deplasare redus în toate cartierele Aradului, pentru ca tu să nu pierzi timp așteptând în caz de pană sau avarie.",
               },
               {
                 icon: ShieldCheck,
@@ -259,13 +257,13 @@ function HomePage({ basePath }: { basePath: string }) {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Servicii electrice Târgoviște</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Servicii electrice Arad</p>
             <h2 className="mt-3 text-4xl font-semibold tracking-tight text-[#101820]">
               Soluții complete pentru orice problemă sau proiect electric.
             </h2>
           </div>
           <p className="max-w-xl text-sm leading-relaxed text-[#59636b]">
-            De la depanări punctuale la instalații electrice complete pentru locuințe noi sau spații comerciale din Târgoviște.
+            De la depanări punctuale la instalații electrice complete pentru locuințe noi sau spații comerciale din Arad.
           </p>
         </div>
 
@@ -305,7 +303,7 @@ function ServicesPage() {
       <div className="mb-8">
         <div className="text-sm font-semibold uppercase tracking-[0.16em] text-[#cf9f2e]">Servicii Detaliate</div>
         <h1 className="mt-3 max-w-3xl text-4xl font-semibold leading-tight text-[#101820] md:text-5xl">
-          Lucrări electrice executate la cele mai înalte standarde în Târgoviște.
+          Lucrări electrice executate la cele mai înalte standarde în Arad.
         </h1>
       </div>
       <div className="space-y-4">
@@ -333,9 +331,9 @@ function QuotePage({ basePath }: { basePath: string }) {
         <div className="rounded-[2rem] bg-[#101820] p-8 text-white flex flex-col justify-between">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">Contact rapid</div>
-            <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">Ai nevoie de un electrician în Târgoviște? Hai să discutăm.</h1>
+            <h1 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">Ai nevoie de un electrician în Arad? Hai să discutăm.</h1>
             <p className="mt-4 text-sm text-white/80 leading-relaxed">
-              Sună direct la numărul de telefon afișat sau scrie-ne pe WhatsApp pentru intervenții urgente în Târgoviște și împrejurimi.
+              Sună direct la numărul de telefon afișat sau scrie-ne pe WhatsApp pentru intervenții urgente în Arad și împrejurimi.
             </p>
           </div>
           <div className="mt-8 pt-6 border-t border-white/10">
@@ -348,7 +346,7 @@ function QuotePage({ basePath }: { basePath: string }) {
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e] mb-2">Conexiune instantanee</div>
           <h2 className="text-2xl font-semibold text-[#101820] mb-3">Preferi apelul direct?</h2>
           <p className="text-sm text-[#59636b] mb-6 max-w-md">
-            Meseriașii din Târgoviște răspund cel mai repede la telefon sau WhatsApp. Ia legătura direct cu noi pentru orice urgență sau lucrare.
+            Meseriașii din Arad răspund cel mai repede la telefon sau WhatsApp. Ia legătura direct cu noi pentru orice urgență sau lucrare.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 w-full justify-center">
             <a
@@ -359,7 +357,7 @@ function QuotePage({ basePath }: { basePath: string }) {
               <span>Sună: 0747 856 267</span>
             </a>
             <a
-              href="https://wa.me/40747856267?text=Salut,%20am%20nevoie%20de%20un%20electrician%20in%20Targoviste."
+              href="https://wa.me/40747856267?text=Salut,%20am%20nevoie%20de%20un%20electrician%20in%20Arad."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3.5 text-sm font-bold text-white shadow-md hover:bg-[#20ba5a] transition"
@@ -378,7 +376,7 @@ function BuyWebsiteSection() {
     <section id="cumpara-site" className="mx-auto max-w-6xl px-6 py-16">
       <div className="rounded-[2.5rem] bg-[#101820] p-8 md:p-12 text-white shadow-xl text-center">
         <div className="inline-flex items-center rounded-full bg-[#cf9f2e]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-[#cf9f2e] mb-4">
-          Ofertă limitată pentru electricieni în Târgoviște
+          Ofertă limitată pentru electricieni în Arad
         </div>
 
         <h2 className="text-3xl md:text-5xl font-semibold tracking-tight max-w-2xl mx-auto leading-tight">
@@ -399,7 +397,7 @@ function BuyWebsiteSection() {
           </a>
 
           <a
-            href="https://wa.me/40747856267?text=Salut,%20am%20vazut%20site-ul%20demo%20pentru%20electrician%20in%20Targoviste%20si%20sunt%20interesat%20sa-l%20cumpar!"
+            href="https://wa.me/40747856267?text=Salut,%20am%20vazut%20site-ul%20demo%20pentru%20electrician%20in%20Arad%20si%20sunt%20interesat%20sa-l%20cumpar!"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-3 rounded-full bg-[#25D366] px-8 py-4 text-base font-bold text-white shadow-lg hover:bg-[#20ba5a] transition transform hover:-translate-y-0.5"
@@ -424,9 +422,9 @@ function Footer({ basePath }: { basePath: string }) {
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid gap-8 md:grid-cols-3">
           <div>
-            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">Voltaic Târgoviște Electric</div>
+            <div className="text-xs font-semibold uppercase tracking-[0.22em] text-[#cf9f2e]">Voltaic Arad Electric</div>
             <p className="mt-4 text-sm leading-relaxed text-[#59636b]">
-              Servicii electrice autorizate ANRE în Târgoviște și zona metropolitană. Intervenții rapide, montaj tablouri și instalații sigure pentru locuința ta.
+              Servicii electrice autorizate ANRE în Arad și zona metropolitană. Intervenții rapide, montaj tablouri și instalații sigure pentru locuința ta.
             </p>
           </div>
           <div className="text-sm text-[#59636b]">
@@ -438,13 +436,13 @@ function Footer({ basePath }: { basePath: string }) {
           <div className="text-sm text-[#59636b]">
             <div className="font-semibold text-[#101820] mb-2">Contact & Program</div>
             <div className="font-medium text-[#101820]">0747 856 267</div>
-            <div className="mt-1">contact@voltaic-targoviste.ro</div>
-            <div className="mt-1">Târgoviște, Aninoasa, Răzvad, Ulmi, Șotânga</div>
+            <div className="mt-1">contact@voltaic-arad.ro</div>
+            <div className="mt-1">Arad, Vladimirescu, Sântana, Pecica, Lipova</div>
           </div>
         </div>
 
         <div className="mt-10 border-t border-[#101820]/10 pt-6 flex flex-col sm:flex-row items-center justify-between text-sm text-[#59636b] gap-4">
-          <div>© {new Date().getFullYear()} Voltaic Târgoviște Electric. Toate drepturile rezervate.</div>
+          <div>© {new Date().getFullYear()} Voltaic Arad Electric. Toate drepturile rezervate.</div>
           <a href="https://twosquares.co.uk" target="_blank" rel="noopener noreferrer" className="hover:text-[#101820] transition">
             Website Dezvoltat de TwoSquares
           </a>
@@ -475,7 +473,7 @@ export default function ElectricianTemplateSite({
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#cf9f2e]">Zonă de acoperire</p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#101820]">
-                Prezenți prompt în toate cartierele din Târgoviște și împrejurimi.
+                Prezenți prompt în toate cartierele din Arad și împrejurimi.
               </h2>
               <p className="mt-3 text-sm text-[#59636b] leading-relaxed">
                 Asigurăm deplasare rapidă pentru urgențe și lucrări programate atât în oraș, cât și în zonele rezidențiale exterioare.

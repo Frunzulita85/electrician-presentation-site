@@ -5,22 +5,22 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Voltaic Târgoviște Electric | Servicii Electrician Autorizat Târgoviște",
+  title: "Voltaic Arad Electric | Servicii Electrician Autorizat Arad",
   description:
-    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Târgoviște și împrejurimi.",
+    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Arad și împrejurimi.",
   keywords: [
-    "electrician Targoviste",
-    "electrician autorizat Targoviste",
-    "interventii electrice urgenta Targoviste",
-    "reparatii instalatii electrice Targoviste",
-    "schimbare tablou electric Targoviste",
-    "servicii electrician ANRE Targoviste",
-    "depanare electrica Targoviste"
+    "electrician Arad",
+    "electrician autorizat Arad",
+    "interventii electrice urgenta Arad",
+    "reparatii instalatii electrice Arad",
+    "schimbare tablou electric Arad",
+    "servicii electrician ANRE Arad",
+    "depanare electrica Arad"
   ],
   openGraph: {
-    title: "Voltaic Târgoviște Electric | Servicii Electrician Autorizat Târgoviște",
+    title: "Voltaic Arad Electric | Servicii Electrician Autorizat Arad",
     description:
-      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Târgoviște și împrejurimi.",
+      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Arad și împrejurimi.",
     type: "website",
     locale: "ro_RO",
   },
