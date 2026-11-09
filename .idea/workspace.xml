@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e299443-8513-494c-862d-2bbb511f27de" name="Changes" comment="">
+    <list default="true" id="a66e4a2e-c42c-45e6-8287-85f2adc1e701" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/electrician-site.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/electrician-site.tsx" afterDir="false" />
     </list>
@@ -27,9 +28,10 @@
   }
 }]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="3Lj2U31kffZXIKmcQN7O0cT63B8" />
+  <component name="ProjectId" id="3LrRblnqy2oHGI9M0IcglSJZZlj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +40,6 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main"
   }
@@ -52,11 +53,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1e299443-8513-494c-862d-2bbb511f27de" name="Changes" comment="" />
-      <created>1793953169675</created>
+      <changelist id="a66e4a2e-c42c-45e6-8287-85f2adc1e701" name="Changes" comment="" />
+      <created>1794210274036</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1793953169675</updated>
+      <updated>1794210274036</updated>
     </task>
     <servers />
   </component>

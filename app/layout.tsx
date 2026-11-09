@@ -5,22 +5,22 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Voltaic Brașov Electric | Servicii Electrician Autorizat Brașov",
+  title: "Voltaic Târgoviște Electric | Servicii Electrician Autorizat Târgoviște",
   description:
-    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
+    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Târgoviște și împrejurimi.",
   keywords: [
-    "electrician Brasov",
-    "electrician autorizat Brasov",
-    "interventii electrice urgenta Brasov",
-    "reparatii instalatii electrice Brasov",
-    "schimbare tablou electric Brasov",
-    "servicii electrician ANRE Brasov",
-    "depanare electrica Brasov"
+    "electrician Targoviste",
+    "electrician autorizat Targoviste",
+    "interventii electrice urgenta Targoviste",
+    "reparatii instalatii electrice Targoviste",
+    "schimbare tablou electric Targoviste",
+    "servicii electrician ANRE Targoviste",
+    "depanare electrica Targoviste"
   ],
   openGraph: {
-    title: "Voltaic Brașov Electric | Servicii Electrician Autorizat Brașov",
+    title: "Voltaic Târgoviște Electric | Servicii Electrician Autorizat Târgoviște",
     description:
-      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
+      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Târgoviște și împrejurimi.",
     type: "website",
     locale: "ro_RO",
   },

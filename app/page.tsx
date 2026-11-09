@@ -3,9 +3,9 @@ import type { Metadata } from "next"
 import ElectricianTemplateSite from "../components/electrician-site"
 
 export const metadata: Metadata = {
-  title: "Voltaic Brașov Electric | Servicii Electrician Autorizat Brașov",
+  title: "Voltaic Târgoviște Electric | Servicii Electrician Autorizat Târgoviște",
   description:
-    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Brașov și împrejurimi.",
+    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Târgoviște și împrejurimi.",
 }
 
 export default function HomePage() {
