@@ -5,22 +5,22 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Voltaic Arad Electric | Servicii Electrician Autorizat Arad",
+  title: "Voltaic Timișoara Electric | Servicii Electrician Autorizat Timișoara",
   description:
-    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Arad și împrejurimi.",
+    "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Timișoara și împrejurimi.",
   keywords: [
-    "electrician Arad",
-    "electrician autorizat Arad",
-    "interventii electrice urgenta Arad",
-    "reparatii instalatii electrice Arad",
-    "schimbare tablou electric Arad",
-    "servicii electrician ANRE Arad",
-    "depanare electrica Arad"
+    "electrician Timișoara",
+    "electrician autorizat Timișoara",
+    "interventii electrice urgenta Timișoara",
+    "reparatii instalatii electrice Timișoara",
+    "schimbare tablou electric Timișoara",
+    "servicii electrician ANRE Timișoara",
+    "depanare electrica Timișoara"
   ],
   openGraph: {
-    title: "Voltaic Arad Electric | Servicii Electrician Autorizat Arad",
+    title: "Voltaic Timișoara Electric | Servicii Electrician Autorizat Timișoara",
     description:
-      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Arad și împrejurimi.",
+      "Servicii profesionale de instalații electrice, intervenții de urgență, tablouri electrice, iluminat și verificări PRAM în Timișoara și împrejurimi.",
     type: "website",
     locale: "ro_RO",
   },
